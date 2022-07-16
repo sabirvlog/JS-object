@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS- JavaScript Summary Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="script.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>We will practice about JavaScript objects in this tutorial</h1>
+	<p>Lets welcome to everyone who is here for visiting my <br> source
+	you will be satisfied from me and enjoy it well.</p>
+
+	<!-- Main section starts from here -->
+	<div id="text">Let's print here</div>
+	<button type="button" onclick="show()">Click Now</button>
+	<button type="button" onclick="person.showName()">Show Details</button>
+
+	<div id="hero">Value of Object print there</div>
+
+</body>
+	<script type="text/javascript">
+		function show() {
+			document.getElementById('text').innerHTML = "Welcome Boss Good Day!";
+		}
+
+		// Now will start the main coding journey.................
+// "We are going to make an object with the person name"
+
+		var person = {
+				fullName: "Sabir Khan",
+				age: 21,
+				hobbies: ["Bed Minton","Football","Hockey","Cricket"],
+
+				showName: function() {
+					alert(this.fullName + " is " + this.age + " years old" + " and favourite hobby is "+ this.hobbies[1] )
+				}
+		}  ;
+
+		// Move next............
+// that is an object having two parts properties and its value, separated by colon (":"). 
+		var main = {
+			name: "Sabir Khan",
+			age: 20,
+			roll: 5069,
+			isHappy: true, 	
+		};
+
+		document.getElementById('hero').innerHTML= main.name + "<br>" + 
+		 main.age + "<br>" + main.roll + "<br>" + main.isHappy; 
+
+	</script>
+
+</html>

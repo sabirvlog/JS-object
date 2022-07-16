@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: green;
+	color: white;
+	width: 100%;
+}
+h1 {
+	text-align: center;
+    margin: 30px auto;
+    font-size: 40px;
+    letter-spacing: 1px;
+    background: blueviolet;
+    padding: 10px;
+    width: 80%;
+}
+p {
+	    text-align: center;
+    margin: 30px auto;
+    color: darkblue;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: antiquewhite;
+    padding: 10px;
+    width: 80%;
+}
+button {
+	margin: 25px auto;
+    color: white;
+    background: blueviolet;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid silver;
+    font-size: 17px;
+    display: block;
+    transition: .4s;
+}
+button:hover {
+	cursor: pointer;
+	transform: scale(1.2) translateY(10px);
+}
+div {
+	color: red;
+	text-transform: capitalize;
+	text-align: center;
+    background: cadetblue;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 30px;
+}
